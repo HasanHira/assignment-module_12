@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, button, a {
 
 
 ::placeholder {
-    color: ;
+    color: #8b54b0;
 }
 
 
@@ -67,6 +67,6 @@ body {
     font-family: 'Roboto', sans-serif;;
     font-size: 1rem;
     font-weight: normal;
-    color: ;
+    /* color: ; */
 }
 
