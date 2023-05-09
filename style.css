@@ -15,18 +15,21 @@ Part 2: Styling the BMI Calculator
 Use CSS to style the form and the result.
 
 Add a background image to the form.
-Add custom fonts using Google Fonts.
 */
 
 
 h1, h2, h3, h4, h5, button, a {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 
 
-::placeholder {
-    color: #8b54b0;
+*::placeholder {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #af80ce;
 }
 
 
@@ -36,37 +39,94 @@ svg {
     fill: currentColor;
     color: currentColor;
 }
-/* .btn-bosiny */
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    border: 0;
-}
-.section-padding {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.section-title {
-    margin-bottom: 3rem;
-}
-.section-title h2 {
-    font-size: 1.85rem;
-    font-weight: 700;
-    text-transform: capitalize;
-}
 
 body {
     font-family: 'Roboto', sans-serif;;
     font-size: 1rem;
     font-weight: normal;
-    /* color: ; */
+    background: #daedee;
+    background-image: url("assets/images/body-pattern.png");
+}
+
+.container {
+    width: 50rem;
+    margin: 25vh auto;
+}
+.calculator {
+    background-image: url("assets/images/calculator.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background: #eef4f9; */
+    border: 2px solid #C3DAEA;
+    border-radius: 2vmin;
+    padding: 2em 3em 4em;
+}
+.title {
+    font-size: 3.5rem;
+    color: #e9458c;
+    text-shadow: 2px 2px 3px#b8d5e9;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+.form {
+    padding: 1em;
+    text-align: left;
+}
+label, input, button {
+    width: 100%;
+    display: block;
+    border-radius: 0.7vmin;
+}
+
+label {
+    font-size: 1.4rem;
+    margin-bottom: 0.3em;
+    font-weight: 400;
+    color: #2f3438;
+}
+
+input {
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 0.75rem;
+    margin-bottom: 2em;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.75em 1em;
+    background: #7f8e99;
+    color: #e2ecf3;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+button:hover,
+button:focus {
+    background: #60accc;
+    color: #f6f6f6;
+    box-shadow: 2px 2px 3px 2px #305666;
+}
+
+p {
+    display: inline-block;
+    margin-top: .5em;
+    /* padding: 1em; */
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #21191e;
+    background: #f8ffd4;
+    width: 100%;
+}
+
+h3 {
+    /* display: inline-block; */
+    float: right;
+    color: #0d8736;
 }
 

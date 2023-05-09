@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/toastify.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/toastify.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Create an HTML file with a form containing two input fields with IDs of "weightInput" and "heightInput", and a button with an ID of "calculateBtn". -->
     <div class="container">
         <div class="calculator">
-            <h1>BMI Calculator</h1>
-            <form action="">
+            <h1 class="title">BMI Calculator</h1>
+            <form>
                 <label for="weight">Weight (kg):</label>
-                <input type="number" name="weight" id="weightInput">
+                <input type="number" name="weight" id="weightInput" placeholder="Type your weight in KG">
                 <label for="height">Height (cm):</label>
-                <input type="number" name="height" id="heightInput">
+                <input type="number" name="height" id="heightInput" placeholder="Type your heigth in CM">
                 <button id="calculateBtn">Calculate</button>
             </form>
-            <div id="result"></div>
+            <div class="result">
+                <p id="bmiResult"></p>
+            </div>
         </div>
     </div>
 
-    <script src="assets/js/toastify.js"></script>
+    <!-- <script src="assets/js/toastify.js"></script> -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
